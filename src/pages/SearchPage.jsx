@@ -1,12 +1,12 @@
 import React from 'react';
 import './SearchPage.css';
-import { useStateValue } from './StateProvider';
-import response from './response';
+import { useStateValue } from '../StateProvider';
+import response from '../response';
 import { Link } from 'react-router-dom';
-import Search from './Search';
+import Search from '../components/Fragments/Search';
 import SearchIcon from '@mui/icons-material/Search';
 import { Description } from '@mui/icons-material';
-import useGoogleSearch from './useGoogleSearch';
+import useGoogleSearch from '../useGoogleSearch';
 
 function SearchPage() {
 	const [{ term = 'Real madrid' }, dispatch] = useStateValue();
